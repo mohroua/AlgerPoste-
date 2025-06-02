@@ -2,130 +2,178 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>اختبار بريد الجزائر - 55 سؤال</title>
+  <title>اختبار بريد الجزائر - الجانب المالي والإداري</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f8f8f8;
-      padding: 20px;
-      direction: rtl;
+       font-family: 'arial', sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
     }
-    h1 {
-      color: #2c3e50;
+    .header {
+      text-align: right;
+      margin-bottom: 30px;
+    }
+    .header img {
+      width: 900px;  
+  height: auto;  
+  display: block;
+  margin: 0 auto;
+  border-radius: 30px; /* ← لجعل الحواف دائرية */
+    }
+   .title {
+  font-size: 70px;
+  font-weight: bold;
+  margin: 50px auto;       /* ← تصحيح */
+  text-align: center;      /* ← لتوسيط النص نفسه */
+  width: fit-content;      /* ← يجعل العنصر بعرض النص فقط */
+  color: #004a99;
+    }
+    .container {
+      padding: 20px;
     }
     .question {
-      background: #fff;
-      border: 1px solid #ccc;
-      border-radius: 8px;
+      background-color: #fff;
       padding: 15px;
       margin-bottom: 15px;
-    }
-    .question h3 {
-      margin-top: 0;
-    }
-    .result {
-      font-size: 20px;
-      margin-top: 20px;
-      background: #e8f5e9;
-      padding: 15px;
+      border: 5px solid #004a99; /* أزرق داكن */
+      border-right: 20px solid #ffc107; /* أصفر */
       border-radius: 10px;
-      color: #2e7d32;
-      font-weight: bold;
-      text-align: center;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
     }
-    button {
+    .question p {
+      margin: 0 0 10px;
+      font-weight: bold;
+      color: #004a99;
+    }
+    .question label {
       display: block;
-      margin: 20px auto;
-      padding: 10px 20px;
-      font-size: 18px;
-      background: #2980b9;
-      color: white;
-      border: none;
-      border-radius: 6px;
+      margin: 4px 0;
       cursor: pointer;
     }
-    button:hover {
-      background: #3498db;
+    h2 {
+      color: #FF0000;
     }
   </style>
 </head>
 <body>
-  <h1>اختبار بريد الجزائر - 55 سؤال</h1>
-  <form id="quizForm"></form>
-  <button onclick="showResult()">عرض النتيجة</button>
-  <div id="result" class="result"></div>
 
-  <script>
-    const questions = [];
+  <div class="header">
+    <img src="https://i.postimg.cc/8ChN66JP/Merged-Images.png" alt="شعار بريد الجزائر">
+    <h1 class="title">اختبار بريد الجزائر الرقمي</h1>
+    <h2>ملاحظة: هذا عبارة عن إختبار تجريبي</h2>
+  <!-- الأسئلة -->
+ <div class="question">
+    <p>1. زبون فقد بطاقته الذهبية، ما هي أول خطوة يقوم بها؟</p>
+    <label><input type="radio" name="q1" value="ج"> ج) يقوم بتجميد البطاقة ويقدم طلب تعويض</label><br>
+    <label><input type="radio" name="q1" value="أ"> أ) يطلب بطاقة جديدة مباشرة</label><br>
+    <label><input type="radio" name="q1" value="ب"> ب) يودع شكوى في الشرطة فقط</label><br>
+    <label><input type="radio" name="q1" value="د"> د) لا يفعل شيئاً</label>
+  </div>
 
-    function addQuestion(q, options, correct) {
-      questions.push({ q, options, correct });
+  <div class="question">
+    <p>2. ما هو رقم الاتصال المجاني لبريد الجزائر؟</p>
+    <label><input type="radio" name="q2" value="أ"> أ) 1530</label><br>
+    <label><input type="radio" name="q2" value="ب"> ب) 1055</label><br>
+    <label><input type="radio" name="q2" value="ج"> ج) 3003</label><br>
+    <label><input type="radio" name="q2" value="د"> د) 112</label>
+  </div>
+
+  <div class="question">
+    <p>3. إذا كان الزبون يعاني من تأخر في تحويل مالي، ما الخطوة الصحيحة؟</p>
+    <label><input type="radio" name="q3" value="ج"> ج) فحص العملية وتقديم تبرير رسمي</label><br>
+    <label><input type="radio" name="q3" value="أ"> أ) إخباره بالانتظار فقط</label><br>
+    <label><input type="radio" name="q3" value="ب"> ب) تجاهل الشكوى</label><br>
+    <label><input type="radio" name="q3" value="د"> د) توجيهه لمكتب آخر عشوائياً</label>
+  </div>
+
+  <div class="question">
+    <p>4. ما هي أقصى مدة صلاحية للبطاقة الذهبية؟</p>
+    <label><input type="radio" name="q4" value="ب"> ب) ثلاث سنوات</label><br>
+    <label><input type="radio" name="q4" value="أ"> أ) سنة</label><br>
+    <label><input type="radio" name="q4" value="ج"> ج) خمس سنوات</label><br>
+    <label><input type="radio" name="q4" value="د"> د) لا تنتهي</label>
+  </div>
+
+  <div class="question">
+    <p>5. ما المقصود بخدمة “BaridiMob”؟</p>
+    <label><input type="radio" name="q5" value="ب"> ب) تطبيق للهاتف يتيح خدمات بريدية ومالية</label><br>
+    <label><input type="radio" name="q5" value="أ"> أ) موقع إلكتروني للتوظيف</label><br>
+    <label><input type="radio" name="q5" value="ج"> ج) خدمة إرسال طرود</label><br>
+    <label><input type="radio" name="q5" value="د"> د) بطاقة دفع دولية</label>
+  </div>
+
+  <div class="question">
+    <p>6. زبون يودع 12000 دج ثم يرسل حوالة بـ 3500 دج ويشتري طوابع بـ 1000 دج، كم يبقى له؟</p>
+    <label><input type="radio" name="q6" value="أ"> أ) 7500 دج</label><br>
+    <label><input type="radio" name="q6" value="ب"> ب) 6500 دج</label><br>
+    <label><input type="radio" name="q6" value="ج"> ج) 8500 دج</label><br>
+    <label><input type="radio" name="q6" value="د"> د) 8000 دج</label>
+  </div>
+
+  <div class="question">
+    <p>7. ما هي المؤسسة التي تنظم قطاع البريد والمواصلات في الجزائر؟</p>
+    <label><input type="radio" name="q7" value="ب"> ب) سلطة الضبط للبريد والمواصلات</label><br>
+    <label><input type="radio" name="q7" value="أ"> أ) وزارة الداخلية</label><br>
+    <label><input type="radio" name="q7" value="ج"> ج) الدرك الوطني</label><br>
+    <label><input type="radio" name="q7" value="د"> د) المجلس الشعبي الوطني</label>
+  </div>
+
+  <div class="question">
+    <p>8. في حال خطأ في اسم المستفيد من حوالة، ما الإجراء؟</p>
+    <label><input type="radio" name="q8" value="ج"> ج) إلغاء العملية وإعادة إدخالها بالاسم الصحيح</label><br>
+    <label><input type="radio" name="q8" value="أ"> أ) تمرير الحوالة عادي</label><br>
+    <label><input type="radio" name="q8" value="ب"> ب) تعديل الاسم دون إشعار</label><br>
+    <label><input type="radio" name="q8" value="د"> د) صرف المبلغ مباشرة</label>
+  </div>
+
+  <div class="question">
+    <p>9. ما نوع الشيكات المستعملة في بريد الجزائر؟</p>
+    <label><input type="radio" name="q9" value="أ"> أ) شيكات بريدية فقط</label><br>
+    <label><input type="radio" name="q9" value="ب"> ب) شيكات بنكية</label><br>
+    <label><input type="radio" name="q9" value="ج"> ج) شيكات دولية</label><br>
+    <label><input type="radio" name="q9" value="د"> د) شيكات شركات فقط</label>
+  </div>
+
+  <div class="question">
+    <p>10. ما هو الفرق بين CCP و CNEP؟</p>
+    <label><input type="radio" name="q10" value="ب"> ب) CCP بريد الجزائر، CNEP بنك</label><br>
+    <label><input type="radio" name="q10" value="أ"> أ) نفس الشيء</label><br>
+    <label><input type="radio" name="q10" value="ج"> ج) CNEP للخدمات البريدية</label><br>
+    <label><input type="radio" name="q10" value="د"> د) CCP في الخارج</label>
+  </div>
+
+  <button type="button" onclick="showResult()">عرض النتيجة</button>
+</form>
+
+<div class="result" id="result"></div>
+
+<script>
+  const answers = {
+    q1: "ج", q2: "أ", q3: "ج", q4: "ب", q5: "ب",
+    q6: "أ", q7: "ب", q8: "ج", q9: "أ", q10: "ب"
+  };
+
+  function showResult() {
+    let score = 0;
+    for (let q in answers) {
+      const selected = document.querySelector(`input[name="${q}"]:checked`);
+      if (selected && selected.value === answers[q]) {
+        score++;
+      }
     }
 
-    // الأسئلة (1–55)
-    addQuestion("ما هو البريد؟", ["نقل الرسائل", "نقل الأموال", "نقل الأشخاص", "كل ما سبق"], 0);
-    addQuestion("متى تأسس بريد الجزائر؟", ["1962", "1975", "1990", "2000"], 0);
-    addQuestion("ما هي الخدمات التي يقدمها بريد الجزائر؟", ["خدمات البريد فقط", "خدمات مالية فقط", "خدمات بريدية ومالية", "خدمات سياحية"], 2);
-    addQuestion("ما هو رقم الطوارئ في بريد الجزائر؟", ["15", "19", "14", "17"], 1);
-    addQuestion("ما هو البريد السريع؟", ["خدمة توصيل الرسائل خلال يوم", "خدمة توصيل الطرود الدولية", "خدمة توصيل الطرود بسرعة عالية", "خدمة إرسال الرسائل الإلكترونية"], 2);
-    addQuestion("أي من التالي هو نوع من الخدمات المالية في بريد الجزائر؟", ["القروض", "الحسابات البريدية", "التأمين", "الاستثمار العقاري"], 1);
-    addQuestion("ما هي العملات التي يمكن استخدامها في البريد؟", ["الدينار الجزائري فقط", "الدولار فقط", "الدينار واليورو", "أي عملة"], 2);
-    addQuestion("ما هو الهدف من خدمة الحساب البريدي الجاري؟", ["حفظ الأموال", "السحب والإيداع فقط", "إجراء المعاملات المالية", "نقل الأموال فقط"], 2);
-    addQuestion("أي من هذه الخدمات متعلقة بالطرود؟", ["إرسال الرسائل", "تتبع الطرود", "خدمة الهاتف", "الإنترنت"], 1);
-    addQuestion("ما هو البريد الإلكتروني؟", ["رسالة إلكترونية", "خدمة الطرود", "خدمة البريد السريع", "نوع من الطرود"], 0);
-    addQuestion("كيف يمكن للزبون تتبع طرده؟", ["عن طريق رقم التتبع", "عن طريق الهاتف فقط", "عن طريق البريد الإلكتروني", "لا يمكن تتبع الطرد"], 0);
-    addQuestion("ما هو عمل موظف البريد؟", ["نقل الرسائل فقط", "تقديم الخدمات المالية فقط", "تقديم الخدمات البريدية والمالية", "خدمة العملاء فقط"], 2);
-    addQuestion("ما هي الوثائق المطلوبة لفتح حساب بريدي؟", ["بطاقة التعريف فقط", "شهادة ميلاد فقط", "بطاقة التعريف وشهادة الميلاد", "لا حاجة لوثائق"], 0);
-    addQuestion("ما هو البريد المالي؟", ["خدمة تقديم القروض", "خدمة التحويلات المالية", "خدمة التوظيف", "خدمة الطرود"], 1);
-    addQuestion("ما هي ساعات عمل بريد الجزائر؟", ["من 8 صباحا إلى 4 مساء", "من 9 صباحا إلى 5 مساء", "24 ساعة", "من 7 صباحا إلى 3 مساء"], 0);
-    addQuestion("من يحدد سياسة الأسعار في بريد الجزائر؟", ["الدولة", "المدير العام", "الوزارة الوصية", "مجلس الإدارة"], 2);
-    addQuestion("ما هي اللغة الرسمية للمراسلات الإدارية؟", ["العربية", "الفرنسية", "الإنجليزية", "كل ما سبق"], 0);
-    addQuestion("أي من هذه التصرفات يُعد مخالفًا في الإدارة؟", ["العمل في الوقت المحدد", "تقديم الخدمات للزبائن", "استغلال المنصب لمصالح شخصية", "إبلاغ الرؤساء عن الأخطاء"], 2);
-    addQuestion("ما هو السلم الإداري الصحيح للتظلم داخل المؤسسة؟", ["الإدارة المباشرة ثم المفتشية", "المفتشية ثم القضاء", "الزملاء ثم الإدارة", "الإعلام فقط"], 0);
-    addQuestion("ما معنى التوقيت الإداري؟", ["توقيت دخول الزبائن", "توقيت عمل الموظفين", "توقيت تسليم الطرود", "توقيت البريد السريع"], 1);
-    addQuestion("ما هو اللباس المهني المطلوب في بريد الجزائر؟", ["غير مهم", "رسمي ومحترم", "حسب الطقس", "رياضي"], 1);
-    addQuestion("ما المقصود بالهيكل التنظيمي؟", ["ترتيب المكاتب", "خريطة توضح تسلسل المسؤوليات", "عدد الموظفين", "قائمة العطل"], 1);
-    addQuestion("من هو المسؤول عن الانضباط داخل المؤسسة؟", ["المدير", "الموظف نفسه", "المفتش", "كل ما سبق"], 3);
-    addQuestion("ما هي الجهة التي تراقب جودة الخدمات؟", ["مفتشية العمل", "المديرية العامة", "مكتب الشكاوي", "كل ما سبق"], 3);
-    addQuestion("ما هو التصرف المناسب عند تأخر الزبون؟", ["تجاهله", "مساعدته بسرعة واحترام", "مجادلته", "رفض خدمته"], 1);
-    addQuestion("ما هو السلوك المطلوب من الموظف تجاه كبار السن؟", ["السرعة فقط", "الاهتمام والاحترام", "طلب مساعدة آخرين", "تجاهل"], 1);
-    addQuestion("من المسؤول عن تسجيل العطل السنوية؟", ["الموظف", "مصلحة المستخدمين", "المدير فقط", "لا أحد"], 1);
-    addQuestion("ما هي الوثيقة التي تُقدّم عند المرض؟", ["عذر شفهي", "شهادة طبية", "بطاقة مريض", "وصفة دواء"], 1);
-    addQuestion("ما هو الهدف من التكوين داخل المؤسسة؟", ["التسلية", "رفع الأداء والكفاءة", "مراقبة الموظفين", "تحديد العقوبات"], 1);
-    addQuestion("من يتخذ القرار في نقل الموظف؟", ["رئيس المصلحة", "الموظف نفسه", "المديرية العامة", "الزملاء"], 2);
-    addQuestion("ما هو التصرف الصحيح عند حدوث خطأ في العمل؟", ["إخفاؤه", "إبلاغ المسؤول فوراً", "إلقاء اللوم على الزملاء", "ترك العمل"], 1);
-    addQuestion("من يقيّم أداء الموظف؟", ["زميله", "الزبائن", "المسؤول المباشر", "المدير العام"], 2);
-    addQuestion("ما المقصود بالأمانة المهنية؟", ["احترام الزملاء", "المحافظة على ممتلكات المؤسسة والسرية", "اللباس الرسمي", "الرد على المكالمات"], 1);
-    addQuestion("متى تُعتبر الغيابات غير مبررة؟", ["عند تقديم شهادة طبية", "بعد العطلة السنوية", "بدون تبرير أو وثيقة رسمية", "عند الوصول متأخراً"], 2);
-    addQuestion("ما هو السلوك الإداري غير المقبول؟", ["العمل بروح الفريق", "استقبال الزبائن بأدب", "الرد بعنف على الزبائن", "الالتزام بالمهام"], 2);
-    addQuestion("ما المقصود بالاتصال الإداري؟", ["مكالمات شخصية", "مراسلات بين الأعوان", "نقل المعلومات داخل المؤسسة", "البريد الإلكتروني فقط"], 2);
-    addQuestion("أي من التالي يُعد وسيلة تواصل داخلية؟", ["الصحف الوطنية", "الإذاعة", "المذكرة الإدارية", "الإعلانات التجارية"], 2);
-    addQuestion("كيف يُحسن الموظف علاقته مع زملائه؟", ["التعاون والاحترام", "العمل الفردي فقط", "الغيرة والمنافسة", "التحدث كثيرًا"], 0);
-    addQuestion("ما هي العقوبة الإدارية الأخف؟", ["الطرد النهائي", "التوبيخ", "الخصم من الأجر", "التوقيف المؤقت"], 1);
-    addQuestion("كيف يمكن تطوير الكفاءة المهنية؟", ["التكوين المستمر", "الراحة فقط", "العمل الروتيني", "تجاهل التعليمات"], 0);
-
-    const form = document.getElementById("quizForm");
-
-    questions.forEach((q, i) => {
-      const div = document.createElement("div");
-      div.className = "question";
-      div.innerHTML = `<h3>س${i+1}: ${q.q}</h3>` +
-        q.options.map((opt, j) => `
-          <label><input type="radio" name="q${i}" value="${j}"> ${opt}</label><br>
-        `).join("");
-      form.appendChild(div);
-    });
-
-    function showResult() {
-      let score = 0;
-      questions.forEach((q, i) => {
-        const selected = document.querySelector(`input[name="q${i}"]:checked`);
-        if (selected && parseInt(selected.value) === q.correct) {
-          score++;
-        }
-      });
-      document.getElementById("result").innerText = `✔️ نتيجتك: ${score} من ${questions.length}`;
+    const result = document.getElementById("result");
+    if (score >= 5) {
+      result.innerHTML = `✔️ نتيجتك: ${score}/10 - ناجح`;
+      result.className = "result success";
+    } else {
+      result.innerHTML = `❌ نتيجتك: ${score}/10 - راسب`;
+      result.className = "result fail";
     }
-  </script>
+  }
+</script>
+
 </body>
 </html>
